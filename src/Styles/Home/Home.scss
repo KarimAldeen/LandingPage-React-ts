@@ -788,8 +788,14 @@
                 margin-left: 0 !important;
                 background-color: var(--secondary);
                 color: var(--bg);
+     width: 100% !important;
             }
-
+  .ant-row{
+    justify-content: end;
+  }
+  .ant-form{
+        width: 100%;
+  }
             .ContactImage {
                 width: 60vw;
                 height: 42vw;
@@ -810,6 +816,9 @@
             }
 
         }
+    }
+    :where(.css-dev-only-do-not-override-1adbn6x).ant-col-offset-8{
+        margin-inline-start: 0 !important;
     }
 
 }
