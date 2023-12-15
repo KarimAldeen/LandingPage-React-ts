@@ -19,6 +19,7 @@ const Page = () => {
       <TopBar />
       <HeroSection />
       <PowerfulFeatures />
+      
       <AboutUs />
       <Questions />
       <Contact/>

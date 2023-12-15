@@ -1,8 +1,11 @@
 import React from 'react'
+import Visibale from '../../HighOrderComponent/withVisibale';
 
 const AboutUs = () => {
+    console.log("AboutUs");
+
     return (
-        <div className='AboutUs' id='aboutus'>
+            <Visibale className='AboutUs' id='aboutus'>
                 <div className="AboutUs_Left">
                     <h1>What Deferent About Us ? </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -23,7 +26,8 @@ const AboutUs = () => {
                     })}
 
                 </div>
-        </div>
+            </Visibale>
+
     )
 }
 

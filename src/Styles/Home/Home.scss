@@ -157,6 +157,16 @@
         display: flex; justify-content: center; align-items: start;
         gap: 2vw;
         .AboutUs_Left{
+
+            animation:  trans2 2s ease-in-out;
+            @keyframes trans2 {
+                    0%{
+                    transform: translateX(-50vw);
+                    }
+                    100%{
+                        transform: translateX(0);
+                    }
+            }
                 h1{
                     font-size: 4vw;
                     margin-bottom: 20px;
@@ -167,6 +177,18 @@
                 }
         }
         .AboutUs_Right{
+
+
+
+            animation:  trans 2s ease-in-out;
+            @keyframes trans {
+                    from{
+                    transform: translateX(50vw);
+                    }
+                    to{
+                        transform: translateX(0);
+                    }
+            }
             display: flex; flex-direction: column; gap: 40px;
             >div{
                 display: flex; align-items: start;
