@@ -168,7 +168,7 @@
     .Header {
 
         h1 {
-            font-size: 3vw;
+            font-size: 6vw;
         }
     }
 }
@@ -177,7 +177,6 @@
 
  .DrawerLinks {
             margin-bottom: 0;
-            // @include Flex;
             display: flex;
             flex-direction: column;
             gap: 2vw;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // This is your Layout Component
 const Visibale = ({ children,...props }:any) => {
@@ -8,8 +8,9 @@ const Visibale = ({ children,...props }:any) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Update our state when observer callback fires
-        setIsVisible(entry.isIntersecting);
+        if(isVisible === false){
+          setIsVisible(entry.isIntersecting);
+        }
       }
     );
     if (ref.current) {
@@ -17,10 +18,11 @@ const Visibale = ({ children,...props }:any) => {
     }
     return () => {
       if (ref.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(ref.current);
       }
     };
-  }, []); // Empty array ensures effect is only run on mount and unmount
+  }, [isVisible]); // Empty array ensures effect is only run on mount and unmount
 
   return (
     <div ref={ref} {...props} >

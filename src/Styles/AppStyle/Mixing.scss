@@ -60,7 +60,6 @@ text-shadow: 2px 2px  var(--secondary);
   }
 
   @mixin Typewriter {
-    // border-right: 5px solid var(--secondary);
     width: 100%;
     word-spacing: nowrap;
     text-wrap: nowrap;

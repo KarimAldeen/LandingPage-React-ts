@@ -2,7 +2,6 @@ import React from 'react'
 import Visibale from '../../HighOrderComponent/withVisibale';
 
 const AboutUs = () => {
-    console.log("AboutUs");
 
     return (
             <Visibale className='AboutUs' id='aboutus'>

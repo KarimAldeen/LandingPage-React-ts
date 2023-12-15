@@ -12,7 +12,7 @@ interface WithDrawerProps {
 
 const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic Drawer",className,width=400 }) => {
   const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState<DrawerProps['placement']>('right');
+  const [placement] = useState<DrawerProps['placement']>('right');
 
 
 
